@@ -105,7 +105,7 @@ python "tier 2/tier2_ei_stability.py"
 **`tier 2/tier2_enhanced.py`** — Comprehensive within-chickadee E/I analysis. Includes partial information decomposition (PID), residual analysis after removing shared variance, bootstrap and Bayesian credible intervals, E-I coordination index, spatial frequency analysis, temporal dynamics, negative controls (anti-correlated, random pairing, scaled noise), and dimensionality analysis.
 
 ```bash
-python "tier 2/tier2_enhanced.py" [path_to_aronov_dataset.pkl]
+python "tier 2/tier2_enhanced.py"
 ```
 
 ### Figure scripts

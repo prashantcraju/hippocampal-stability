@@ -35,6 +35,7 @@ warnings.filterwarnings('ignore', category=RuntimeWarning)
 # Import from shesha-geometry package
 from shesha import feature_split, sample_split, compute_rdm
 
+DATA_PATH  = 'data/aronov_dataset.pkl'
 OUTPUT_DIR = 'output/tier2_enhanced'
 
 GRID_SIZE = 40
@@ -56,18 +57,15 @@ def load_chickadee_data_with_cell_types(data_path=None):
     Parameters
     ----------
     data_path : str, optional
-        Path to aronov_dataset.pkl file
-        If None, tries common locations
-    
+        Path to aronov_dataset.pkl. Defaults to DATA_PATH.
+
     Returns
     -------
     sessions : list
         Chickadee sessions with E and I neurons separated
     """
     if data_path is None:
-        raise FileNotFoundError(
-            "Could not find aronov_dataset.pkl. Please provide path explicitly."
-        )
+        data_path = DATA_PATH
     
     print(f"Loading data from: {data_path}")
     
@@ -876,7 +874,7 @@ def run_comprehensive_analysis(data_path=None):
     Parameters
     ----------
     data_path : str, optional
-        Path to aronov_dataset.pkl file
+        Path to aronov_dataset.pkl. Defaults to DATA_PATH.
     """
     print("="*70)
     print("TIER 2 ENHANCED: Within-Chickadee E/I Synergy Analysis")
@@ -1140,11 +1138,6 @@ def export_results(results):
 
 
 if __name__ == '__main__':
-    import sys
-    
-    # Allow data path as command line argument
-    data_path = sys.argv[1] if len(sys.argv) > 1 else None
-    
-    results = run_comprehensive_analysis(data_path=data_path)
+    results = run_comprehensive_analysis()
     export_results(results)
     print("\nTier 2 Enhanced Analysis Complete!")
