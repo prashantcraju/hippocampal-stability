@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ### 2. Download the raw data
 
-Download the Aronov et al. (2021) electrophysiology dataset from Dryad:
+Download the Payne et al. (2021) electrophysiology dataset from Dryad:
 
 > Payne, H. L., Lynch, G. F., & Aronov, D. (2021). *Neural representations of space in the hippocampus of a food-caching bird* [Dataset]. Dryad. <https://doi.org/10.5061/dryad.pg4f4qrp7>
 
