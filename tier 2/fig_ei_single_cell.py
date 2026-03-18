@@ -27,6 +27,7 @@ C_CHICK  = '#C62D50'
 C_FINCH  = '#4A90C4'
 C_E      = '#2E8B57'   # Excitatory Green
 C_I      = '#FF8C00'   # Inhibitory Orange
+C_FULL   = '#C62D50'   # Full (E+I) — consistent across both species
 
 plt.rcParams.update({
     'font.family'       : 'DejaVu Sans',
@@ -158,8 +159,7 @@ def main():
         means = [full.mean(), e_only.mean(), i_only.mean()]
         sems = [full.sem(), e_only.sem(), i_only.sem()]
         
-        base_color = C_CHICK if species == 'chickadee' else C_FINCH
-        colors = [base_color, C_E, C_I]
+        colors = [C_FULL, C_E, C_I]
         labels = ['Full\n(E+I)', 'E-Only', 'I-Only'] if i == 0 else [None, None, None]
         
         for j in range(3):
