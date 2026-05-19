@@ -1,4 +1,9 @@
 # Geometric Phase Transition Enables Extreme Hippocampal Memory Capacity
+<p align="center">
+    <a style="text-decoration:none !important;" href="https://arxiv.org/abs/2605.17199" alt="arXiv"><img src="https://img.shields.io/badge/paper-arXiv-blue" /></a>
+    <a style="text-decoration:none !important;" href="https://huggingface.co/papers/2605.17199" alt="Hugging Face Papers"><img src="https://img.shields.io/badge/paper-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" /></a>
+</p>
+
 
 Code for reproducing all analyses and figures. Three tiers of analysis test the hypothesis that topological organization of hippocampal spatial codes enables extreme memory capacity in food-caching birds.
 
