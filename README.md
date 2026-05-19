@@ -137,3 +137,15 @@ python "tier 3/tier3_parameter_sweep.py"
 
 - `tier 3/fig_3.py` — Main figure 3: decoding error vs memory load, parameter sweep topology advantage, empirical redundancy
 - `tier 3/fig_parameter_sweep.py` — Appendix: 5x5 heatmap of topology advantage across the full parameter sweep
+
+
+## Citation
+
+```bibtex
+@article{raju2026hippocampus,
+  title = {Geometric Phase Transition Enables Extreme Hippocampal Memory Capacity},
+  author = {Raju, Prashant C.},
+  journal = {arXiv preprint arXiv:2605.17199},
+  year = {2026}
+}
+```
